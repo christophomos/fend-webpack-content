@@ -5,6 +5,10 @@ module.exports = {
     mode: 'development',
     devtool: 'source-map',
     entry: './src/client/index.js',
+    // use instead of clean-webpack-plugin
+    output: {
+        clean: true,
+    },
     module: {
         rules: [
                 {
