@@ -12,4 +12,4 @@ console.log(checkForName);
 export {
     checkForName,
     handleSubmit
-}
+};
