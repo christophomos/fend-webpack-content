@@ -6,15 +6,24 @@ module.exports = {
     // use instead of clean-webpack-plugin
     output: {
         clean: true,
+        // use instead of deprecated style used by course
+        library: {
+            name: 'Client',
+            type: 'var',
+        }
     },
     entry: './src/client/index.js',
     module: {
         rules: [
-                {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: "babel-loader"
-                }
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            },
+            {
+                test: /\.scss$/,
+                use: [ 'style-loader', 'css-loader', 'sass-loader' ]   
+            }
         ]
     },
     plugins: [
