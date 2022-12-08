@@ -1,5 +1,6 @@
 import { checkForName } from './js/nameChecker';
 import { handleSubmit } from './js/formHandler';
+import { handleWeatherClick } from './js/weather';
 
 import './styles/resets.scss';
 import './styles/base.scss';
@@ -11,5 +12,6 @@ console.log(checkForName);
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    handleWeatherClick
 };
