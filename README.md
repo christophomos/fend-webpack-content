@@ -25,3 +25,7 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 - ```npm install```
 - ```npm start``` to start the app
 - this app runs on localhost:8080, but you can of course edit that in index.js
+
+
+https://stackoverflow.com/questions/61670459/importing-in-node-js-error-must-use-import-to-load-es-module
+Reason for using fetch v2

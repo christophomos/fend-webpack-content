@@ -39,9 +39,16 @@
             </section>
 
             <section>
-                <strong>Weather:</strong>
+                <strong>Breather:</strong>
                 <button onclick="return Client.handleWeatherClick(event)">Get Weather</button>
                 <div id="weather"></div>
+            </section>
+
+            <section>
+                <strong>Detect language:</strong>
+                <button onclick="return Client.handleDetectLanguage(event)">Detect language</button>
+                <input id="languageInput" type="text" name="input" value="" placeholder="Write in any language here">
+                <div id="detectedLanguage"></div>
             </section>
         </main>
 
